@@ -3,4 +3,4 @@ machine:
     version: rbx-2.2.6
 test:
   override:
-    - bundle exec rspec spec
+    - rspec spec/hello_spec.rb
