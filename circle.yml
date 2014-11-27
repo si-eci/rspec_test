@@ -1,6 +1,6 @@
 machine:
   ruby:
-    version: 2.0.0-rc2
+    version: rbx-2.2.6
 test:
   override:
     - bundle exec rspec spec
