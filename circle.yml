@@ -7,4 +7,4 @@ machine:
 
 database:
   pre:
-    - ./bin/circleci_pre.sh
+    - sudo ./bin/circleci_pre.sh
