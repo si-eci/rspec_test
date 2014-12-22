@@ -2,10 +2,9 @@ machine:
   timezone: Asia/Tokyo
   ruby:
     version: 2.1.3
-  post:
-    - sudo pip install awscli
 
 test:
   pre:
-    - ls -la bin
     - chmod +x bin/test.sh
+    - ls -la bin
+    - ./bin/test.sh
