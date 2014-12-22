@@ -2,6 +2,8 @@ machine:
   timezone: Asia/Tokyo
   ruby:
     version: 2.1.3
+  post:
+    - sudo pip install awscli
 test:
   pre:
     - ./bin/circleci_pre.sh
