@@ -8,3 +8,4 @@ machine:
 test:
   pre:
     - ls -la bin
+    - chmod +x bin/test.sh
