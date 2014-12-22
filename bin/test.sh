@@ -4,4 +4,4 @@ IP_IO=`curl -s ifconfig.io`
 
 echo $IP_IO
 
-aws ec2 describe-security-groups --group-names "circleci"
+aws ec2 describe-security-groups --group-name "circleci"
