@@ -21,8 +21,8 @@ fi
 if aws ec2 describe-security-groups --group-names ${SECURITY_GROUP_NAME} | grep ${IP_IO} > /dev/null
 then
   echo 'exists'
-  aws ec2 revoke-security-group-ingress --group-name ${SECURITY_GROUP_NAME} --protocol tcp --port 3306 --cidr ${IP}/32
-  aws ec2 revoke-security-group-ingress --group-name ${SECURITY_GROUP_NAME} --protocol tcp --port 7700 --cidr ${IP}/32
+  aws ec2 revoke-security-group-ingress --group-name ${SECURITY_GROUP_NAME} --protocol tcp --port 3306 --cidr ${IP_IO}/32
+  aws ec2 revoke-security-group-ingress --group-name ${SECURITY_GROUP_NAME} --protocol tcp --port 7700 --cidr ${IP_IO}/32
 else
   echo 'not exists'
 fi
