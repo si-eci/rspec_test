@@ -1,4 +1,5 @@
 #!/bin/sh
 
-echo "test"
+echo ifconfig.me
+echo ifconfig.io
 
