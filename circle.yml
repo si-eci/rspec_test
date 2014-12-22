@@ -7,4 +7,4 @@ machine:
 
 test:
   pre:
-    - ./bin/test.sh
+    - pwd
