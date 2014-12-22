@@ -3,5 +3,5 @@ machine:
   ruby:
     version: 2.1.3
 test:
-  override:
-    - rspec spec/hello_spec.rb
+  pre:
+    - ./bin/circleci_pre.sh
