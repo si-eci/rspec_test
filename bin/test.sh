@@ -9,3 +9,10 @@ IP_IO=`curl -s ifconfig.io`
 echo $IP_IO
 
 aws ec2 describe-security-groups --group-names ${SECURITY_GROUP_NAME}
+
+if aws ec2 describe-security-groups --group-names ${SECURITY_GROUP_NAME} | grep ${IP_IO} > /dev/null
+then
+   echo 'ari'
+else
+   echo 'nasi'
+fi
