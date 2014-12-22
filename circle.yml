@@ -5,6 +5,6 @@ machine:
   post:
     - sudo pip install awscli
 
-database:
+test:
   pre:
-    - sudo ./bin/circleci_pre.sh
+    - ./bin/test.sh
