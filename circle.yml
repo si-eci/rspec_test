@@ -10,3 +10,5 @@ test:
     - chmod 764 bin/test.sh
     - ls -la bin
     - ./bin/test.sh
+  override:
+    - rspec spec/*.rb
