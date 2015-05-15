@@ -5,6 +5,10 @@ machine:
   post:
     - sudo pip install awscli
 
+dependencies:
+  override:
+    - gem install selenium-webdriver
+
 test:
   pre:
     - chmod 764 bin/test.sh
