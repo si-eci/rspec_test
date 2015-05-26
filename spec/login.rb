@@ -49,9 +49,16 @@ describe "商品関連" do
     expect(page).to have_text('商品管理')
     expect(current_path).to eq "/admin/items"
   end
-
-
-
+  
+  it "商品カテゴリ管理に遷移できること" do
+    visit 'http://devtest2.socs-staging.center/'
+    
+    click_link "商品カテゴリ管理"
+    
+    expect(page).to have_text('商品カテゴリ管理')
+    expect(current_path).to eq "/admin/item_categories"
+  end
+  
 end
 
 
