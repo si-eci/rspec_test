@@ -22,7 +22,7 @@ describe "SOCS" do
   #  expect(page).to have_content("ログイン")
   #end
   
-  if "ログインできること" do
+  it "ログインできること" do
     fill_in 'user_login', with: 'socsuser'
     fill_in 'user_password', with: 'si2015devtest2'
     click_button "ログイン"
