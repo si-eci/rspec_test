@@ -26,6 +26,9 @@ describe "SOCS" do
     fill_in 'user_login', with: 'socsuser'
     fill_in 'user_password', with: 'si2015devtest2'
     click_button "ログイン"
+    
+    expect(page).to have_text('ユーザーメイン画面')
+    
   end 
 
 end
