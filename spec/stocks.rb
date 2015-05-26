@@ -25,5 +25,11 @@ describe "在庫関連" do
     expect(page).to have_text('受払管理')
     expect(current_path).to eq "/admin/stock_io_logs"
   end
+  
+  it "在庫管理へ遷移できる" do
+    click_link "在庫管理"
+    expect(page).to have_text('在庫管理')
+    expect(current_path).to eq "/admin/stocks"
+  end
 
 end
