@@ -8,6 +8,7 @@ machine:
 dependencies:
   override:
     - gem install selenium-webdriver
+    - gem install capybara
 
 test:
   pre:
