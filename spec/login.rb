@@ -34,10 +34,17 @@ describe "SOCS" do
     expect(current_path).to eq "/admin/items"
   end 
 
+end 
 
+
+describe "商品関連" do
+  
+  before do
+    visit 'http://devtest2.socs-staging.center/'
+  end
+  
   it "商品管理に遷移できること" do
-    #click_on "商品管理"
-    
+    click_link "商品管理"
     expect(page).to have_text('商品管理')
     expect(current_path).to eq "/admin/items"
   end
