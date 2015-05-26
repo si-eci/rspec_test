@@ -33,10 +33,10 @@ describe "SOCS" do
 
 
   it "商品管理に遷移できること" do
-    click_link "商品カテゴリ管理"
+    click_on "商品管理"
     
-    expect(page).to have_text('商品カテゴリ管理')
-    #expect(current_path).to eq "/admin/items"
+    expect(page).to have_text('商品管理')
+    expect(current_path).to eq "/admin/items"
   end
 
 
