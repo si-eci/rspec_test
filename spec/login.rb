@@ -18,9 +18,15 @@ describe "SOCS" do
     visit 'http://devtest2.socs-staging.center/'
   end
 
-  it "トップページが表示されること" do
-    expect(page).to has_content?("ログイン")
-  end
+  #it "トップページが表示されること" do
+  #  expect(page).to have_content("ログイン")
+  #end
+  
+  if "ログインできること" do
+    fill_in 'user_login', with: 'socsuser'
+    fill_in 'user_password', with: 'si2015devtest2'
+    click_button "ログイン"
+  end 
 
 end
 
