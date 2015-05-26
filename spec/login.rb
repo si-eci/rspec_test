@@ -15,7 +15,7 @@ Capybara.app_host = 'http://devtest2.socs-staging.center/'
 describe "SOCS" do
 
   before do
-    visit '/'
+    visit 'http://devtest2.socs-staging.center/'
   end
 
   it "トップページが表示されること" do
