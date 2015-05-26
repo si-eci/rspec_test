@@ -18,7 +18,7 @@ describe "SOCS" do
     visit '/'
   end
 
-  if "トップページが表示されること" do
+  it "トップページが表示されること" do
     expect(page).to have_content('user_login')
   end
 
