@@ -59,10 +59,10 @@ describe "商品関連" do
     expect(current_path).to eq "/admin/item_categories"
   end
   
-  it "企画管理に遷移できること" do
-    click_link "企画管理"
-    expect(page).to have_text('企画管理')
-    expect(current_path).to eq "/admin/standardss"
+  it "規格管理に遷移できること" do
+    click_link "規格管理"
+    expect(page).to have_text('規格管理')
+    expect(current_path).to eq "/admin/standards"
   end
 
 
