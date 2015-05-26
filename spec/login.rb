@@ -19,7 +19,7 @@ describe "SOCS" do
   end
 
   it "トップページが表示されること" do
-    expect(page).to have_content('user_login')
+    expect(page).to have_content('user[login]')
   end
 
 end
