@@ -29,11 +29,14 @@ describe "SOCS" do
     
     expect(page).to have_text('ユーザーメイン画面')
     #expect(page).to have_text('m9(^Д^)ﾌﾟｷﾞｬｰ')
+
+    click_link "商品管理"
+    expect(current_path).to eq "/admin/items"
   end 
 
 
   it "商品管理に遷移できること" do
-    click_on "商品管理"
+    #click_on "商品管理"
     
     expect(page).to have_text('商品管理')
     expect(current_path).to eq "/admin/items"
